@@ -1,0 +1,8 @@
+[package]
+name = "types-parser"
+version = "0.1.0"
+authors = ["Chelsea Holland Komlo <me@chelseakomlo.com>"]
+
+[dependencies]
+syn = { version = "0.14.2", features = ["extra-traits", "parsing", "printing", "full"] }
+
