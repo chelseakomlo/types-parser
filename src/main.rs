@@ -136,6 +136,7 @@ fn handle_constant(constant_item: ItemConst) -> Result<String, String> {
 
     let str_val = match literal {
         Lit::Str(inner) => inner.value(),
+        Lit::Int(inner) => inner.value().to_string(),
         _ => return Err(String::from("Unknown literal type")),
     };
 
