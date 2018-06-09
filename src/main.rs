@@ -85,6 +85,16 @@ fn main() {
         }
     };
 
+    if !input_file.ends_with("_generated.rs") {
+        println!("Input file name must end with `_generated.rs`");
+        return;
+    }
+
+    if !output_file.ends_with("_generated.h") {
+        println!("Output file name must end with `_generated.h`");
+        return;
+    }
+
     let file_ast = match read_input_file(input_file) {
         Ok(n) => n,
         Err(e) => {
