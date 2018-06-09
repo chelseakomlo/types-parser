@@ -5,3 +5,5 @@ could be extended to structs and/or enums.
 
 To run:
 `cargo run <intputfile.rs> <outputfile.h>`
+
+For example input and output files, see `/docs`.
